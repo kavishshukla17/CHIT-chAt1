@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chit Chat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> 
+    <link rel="icon" type="png" href="logo.png"/>
+</head>
+<body>
+    <nav>
+        <img class="logo" src="logo.png" alt="Chit Chat Logo">
+    </nav>
+    <div class="container" id="message-container">
+        <!-- Message items will be appended here dynamically -->    </div>
+    <div class="send">
+        <form id="send-container">
+            <input type="text" name="inputInp" id="messageInp" placeholder="Type your message...">
+            <button class="btn" type="submit"><i class="fas fa-paper-plane"></i></button>
+        </form>
+    </div>
+    <input
+  type="checkbox"
+  class="sr-only"
+  id="darkmode-toggle"
+>
+<label for="darkmode-toggle" class="toggle">
+  <span>Toggle dark mode</span>
+</label>
+
+
+    <script src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

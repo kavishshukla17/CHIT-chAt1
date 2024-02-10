@@ -1,0 +1,173 @@
+.logo{
+    display: block;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+}
+
+body{
+    height: 100vh;
+    background: url('bg12.jpg');
+    background-position: center;
+    font-family: Arial, sans-serif; 
+    color: #fff; 
+}
+
+.container{
+    max-width: 800px; 
+    border: 2px solid #000000; 
+    margin: auto;
+    height: 60vh;
+    overflow-y: auto;
+    padding: 10px;
+    background: url('bg12.jpg');
+    background-size: contain;
+    /* filter: blur(1px); */
+    box-shadow: 0 10px 6px 0 rgba(0, 0, 0, 0.2), 0 6px  15px 0 rgba(0, 0, 0, 0.19);
+}
+
+.message{
+    box-shadow: 5px 4px 10px;;
+    padding: 10px;
+    max-width: 70%; 
+    margin: 10px 0;
+    border-radius: 10px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/*
+  📣 Note: all sizes are in ems, so change the .toggle font-size to
+  scale to whatever size you need.
+*/
+
+.toggle {
+    font-size: 1rem; /* 👈 change this to scale */
+    /* border: .125em solid currentColor;
+    border-radius: 2em; */
+    cursor: pointer;
+    display: flex;
+    height: 2em;
+    position: relative;
+    width: 3.75em;
+  }
+  /* .toggle span {
+    background-color: currentColor;
+    border-radius: 2em;
+    display: block;
+    height: 1.5em;
+    left: .25em;
+    overflow: hidden;
+    position: absolute;
+    top: .25em;
+    text-indent: -9999px;
+    transition: left .25s;
+    width: 1.5em;
+    z-index: 2;
+  } */
+  
+  /* .toggle::before,
+  .toggle::after {
+    content: '';
+    display: block;
+    border-radius: 1em;
+    position: absolute;
+    z-index: 1;
+  }
+   */
+  /* .toggle::after {
+    box-shadow: .25em .25em #5901d8;
+    height: 1.125em;
+    right: .9em;
+    top: .125em;
+    width: 1.125em; */
+  }
+  
+  /* .toggle::before {
+    background-color: #ffc409;
+    height: .625em;
+    outline: .25em dotted #ffc409;
+    outline-offset: .125em;
+    left: .7em;
+    top: .7em;
+    width: .625em;
+  } */
+  
+  input:checked ~ .toggle span {
+    left: 2em;
+  }
+  .sr-only {
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+  }
+  body {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    transition: background-color .25s;
+    color: #1e1e1e;
+    background: linear-gradient(to bottom right, #e7f9ee 25%, #a0ffd9 50%, #1a171c 75%, #01072a);
+    background-size: 300% 300%;
+    background-position: top left;
+    transition: background-position .5s;
+  }
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+  }
+  
+  
+  body:has(#darkmode-toggle:checked) {
+    background-position: 100% 100%;
+    color: #d0d0d0;
+  }
+
+
+.right{
+    float: right;
+    background-color: #616161;
+}
+
+.left{
+    float: left;
+    color: #d0d0d0;
+    background-color: #1e1e1e;
+}
+
+#send-container{
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin: auto; 
+    padding-top: 1.5em;
+   
+
+}
+
+#messageInp{
+    flex: 1; 
+    border-radius: 5px;
+    border: none;
+    padding: 8px;
+    font-size: 16px; 
+}
+
+.btn{
+    height: 40px;
+    border-radius: 50%; 
+    border: none;
+    background-color: #4CAF50; 
+    color: #fff;
+    margin-left: 10px; 
+    padding: 0 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.btn:hover{
+    background-color: #45a049;
+}
